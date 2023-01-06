@@ -1,24 +1,78 @@
-import logo from './logo.svg';
-import './App.css';
+import "@fontsource/public-sans";
+import * as React from "react";
+import { CssVarsProvider } from "@mui/joy/styles";
+import "./App.css";
+import { Tabs, Tab, TabList, ListItemDecorator, tabClasses } from "@mui/joy";
+import { HomeRounded, MenuBookRounded, SettingsRounded } from "@mui/icons-material";
+import MainPage from "./pages/home";
+import SettingsPage from "./pages/settings";
+import HistoryPage from "./pages/history";
 
 function App() {
+  const [index, setIndex] = React.useState(1);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <CssVarsProvider>
+      <div className="content-main">
+        { index === 1 ? <MainPage></MainPage> : (index === 0 ? <HistoryPage></HistoryPage>: <SettingsPage></SettingsPage>) }
+      </div>
+       <div className="navbar">
+        <Tabs
+          size="lg"
+          aria-label="Bottom Navigation"
+          value={index}
+          onChange={(event, value) => setIndex(value)}
+          sx={(theme) => ({
+            borderRadius: "xl",
+            maxWidth: 400,
+            mx: "5px",
+            marginBottom: "5px",
+            boxShadow: theme.shadow.sm,
+            "--Tabs-gap": "5px",
+            [`& .${tabClasses.root}`]: {
+              boxShadow: "none",
+              borderRadius: "lg",
+              whiteSpace: "nowrap",
+              transition: "0.3s",
+              fontWeight: "lg",
+              flex: 1,
+              [`&:not(.${tabClasses.selected}):not(:hover)`]: {
+                opacity: 0.72,
+              },
+            },
+          })}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <TabList variant="soft" sx={{ "--List-decorator-size": "28px" }}>
+            <Tab
+              orientation="vertical"
+              {...(index === 0 && { variant: "solid", color: "primary" })}
+            >
+              <ListItemDecorator>
+                <MenuBookRounded />
+              </ListItemDecorator>
+              History
+            </Tab>
+            <Tab
+              orientation="vertical"
+              {...(index === 1 && { variant: "solid", color: "primary" })}
+            >
+              <ListItemDecorator>
+                <HomeRounded />
+              </ListItemDecorator>
+              Home
+            </Tab>
+            <Tab
+              orientation="vertical"
+              {...(index === 2 && { variant: "solid", color: "primary" })}
+            >
+              <ListItemDecorator>
+                <SettingsRounded/>
+              </ListItemDecorator>
+              Settings
+            </Tab>
+          </TabList>
+        </Tabs>
+      </div>
+    </CssVarsProvider>
   );
 }
 
