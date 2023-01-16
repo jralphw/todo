@@ -1,3 +1,4 @@
+//@ts-check
 import "@fontsource/public-sans";
 import * as React from "react";
 import { CssVarsProvider } from "@mui/joy/styles";
@@ -20,6 +21,7 @@ function App() {
           size="lg"
           aria-label="Bottom Navigation"
           value={index}
+          // @ts-ignore
           onChange={(event, value) => setIndex(value)}
           sx={(theme) => ({
             borderRadius: "xl",
