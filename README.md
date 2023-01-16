@@ -20,4 +20,5 @@ Literally the world's most popular text editor. I don't think you need this link
 ## Plans
 
 1. Plan to switch over from regular JavaScript to [TypeScript](https://www.typescriptlang.org/) in project. Coming soon.
+2. Deploying a preview ver. of the app on Firebase or Github pages.
 2. Will add iOS platform in capacitor for well... iOS version ofc.
