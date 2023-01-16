@@ -1,4 +1,5 @@
 //@ts-check
+
 import "@fontsource/public-sans";
 import * as React from "react";
 import { CssVarsProvider } from "@mui/joy/styles";

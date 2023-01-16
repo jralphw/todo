@@ -15,7 +15,7 @@ A React component library based off of material UI. Really clean and nice to use
 Used to turn this web app into a client-side mobile app. Great alternative to Apache cordova. [Here's the website](https://capacitorjs.com/)
 
 ### vs code
-Literally the world's most popular text editor. I don't think you deed thi link but (just in case)[https://code.visualstudio.com/]
+Literally the world's most popular text editor. I don't think you need this link but [here it is anyway](https://code.visualstudio.com/)
 
 ## Plans
 
