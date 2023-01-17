@@ -38,6 +38,8 @@
 }
 
 .navbar {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   position: fixed;
   bottom: 0;
