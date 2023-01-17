@@ -17,14 +17,14 @@ function App() {
       </div>
        <div className="navbar">
         <Tabs
-          size="lg"
+          size="md"
           aria-label="Bottom Navigation"
           value={index}
           // @ts-ignore
           onChange={(event, value) => setIndex(value)}
           sx={(theme) => ({
-            borderRadius: "xl",
-            maxWidth: 400,
+            borderRadius: "md",
+            width: "100%",
             mx: "5px",
             marginBottom: "5px",
             boxShadow: theme.shadow.sm,

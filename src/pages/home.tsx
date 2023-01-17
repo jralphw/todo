@@ -35,7 +35,6 @@ function MainPage() {
             flexDirection: "column",
             gap: 2,
             borderRadius: "sm",
-            boxShadow: "md",
           }}
           variant="outlined"
         >
@@ -76,7 +75,6 @@ function MainPage() {
             flexDirection: "column",
             gap: 2,
             borderRadius: "sm",
-            boxShadow: "md",
           }}
           variant="outlined"
         >
@@ -100,7 +98,6 @@ function MainPage() {
               //width: 320,
               gap: 2,
               "&:hover": {
-                boxShadow: "md",
                 borderColor: "neutral.outlinedHoverBorder",
               },
             }}
@@ -143,7 +140,6 @@ function MainPage() {
               //width: 320,
               gap: 2,
               "&:hover": {
-                boxShadow: "md",
                 borderColor: "neutral.outlinedHoverBorder",
               },
             }}
@@ -185,7 +181,6 @@ function MainPage() {
               //width: 320,
               gap: 2,
               "&:hover": {
-                boxShadow: "md",
                 borderColor: "neutral.outlinedHoverBorder",
               },
             }}
@@ -214,8 +209,8 @@ function MainPage() {
                 </Link>
               </Typography>
               <div>
-              <LinearProgress determinate value={94} />
-              <Chip variant="soft" color="success" size="sm">
+                <LinearProgress determinate value={94} />
+                <Chip variant="soft" color="success" size="sm">
                   Only 6 left!
                 </Chip>
                 <Chip variant="soft" color="warning" size="sm">
