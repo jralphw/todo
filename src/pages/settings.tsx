@@ -3,7 +3,6 @@ import * as React from "react";
 import { CssVarsProvider } from "@mui/joy/styles";
 import "./mystyles.css";
 import { Sheet, Typography } from "@mui/joy";
-//import { HomeRounded, MenuBookRounded } from "@mui/icons-material";
 
 /*function ModeToggle() {
   const { mode, setMode } = useColorScheme();

@@ -20,8 +20,7 @@ function App() {
           size="md"
           aria-label="Bottom Navigation"
           value={index}
-          // @ts-ignore
-          onChange={(event, value) => setIndex(value)}
+          onChange={(event, value) => setIndex(value as number)}
           sx={(theme) => ({
             borderRadius: "md",
             width: "100%",
