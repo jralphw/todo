@@ -2,7 +2,7 @@ import "@fontsource/public-sans";
 import * as React from "react";
 import { CssVarsProvider } from "@mui/joy/styles";
 import "./mystyles.css";
-import { Sheet, Typography } from "@mui/joy";
+import { Card, Sheet, Typography } from "@mui/joy";
 
 /*function ModeToggle() {
   const { mode, setMode } = useColorScheme();
@@ -47,6 +47,16 @@ function SettingsPage() {
             <b>Profile</b>
           </Typography>
         </div>
+        <Card
+            variant="outlined"
+            sx={{
+              //width: 320,
+              gap: 2,
+              "&:hover": {
+                borderColor: "neutral.outlinedHoverBorder",
+              },
+            }}
+          ></Card>
       </Sheet>
     </CssVarsProvider>
   );
