@@ -28,6 +28,8 @@ function NavBar() {
       value={index}
       onChange={(event, value) => {
         setIndex(value as number);
+        //tab routing logic
+        //find better implementation
         if (value === 0) {
           navigate("/history");
         }

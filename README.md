@@ -3,6 +3,11 @@
 This is a small project where I'm building a mobile To Do app. This is meant to be a web-app runing within a capacitor container.
 The purpose of this project is as practice/learning I guess. I intend for this to be the first full project in my portfolio.(Everyone is building Netflix/Disney+ clones these days)
 The progress of this project is expected to be very irregular... but I'll finish it, sooner rather than later.
+
+You can find a Firebase-hosted preview [here](https://jrw-todo.web.app). 
+#### Note; 
+1. This is intended to be a mobile app and will not do well on large screens.
+2. The firebase-hosted version will not necessarily be up-to-date on current progress.
 ## Resources
 
 ### react framework
