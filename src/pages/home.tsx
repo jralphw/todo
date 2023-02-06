@@ -219,6 +219,133 @@ function MainPage() {
               </div>
             </div>
           </Card>
+          <Card
+            variant="outlined"
+            sx={{
+              //width: 320,
+              gap: 2,
+              "&:hover": {
+                borderColor: "neutral.outlinedHoverBorder",
+              },
+            }}
+          >
+            <div>
+              <Typography
+                level="h2"
+                fontSize="lg"
+                id="card-description"
+                mb={0.5}
+              >
+                Groceries Shopping
+              </Typography>
+              <Typography
+                fontSize="sm"
+                aria-describedby="card-description"
+                mb={1}
+              >
+                <Link
+                  overlay
+                  underline="none"
+                  href="#interactive-card"
+                  sx={{ color: "text.tertiary" }}
+                >
+                  Loresm Ipsum sit dolor amet
+                </Link>
+              </Typography>
+              <div>
+                <LinearProgress determinate value={currentProg} />
+                <Chip variant="soft" color="info" size="sm">
+                  1 Item left
+                </Chip>
+              </div>
+            </div>
+          </Card>
+          <Card
+            variant="soft"
+            color="danger"
+            sx={{
+              //width: 320,
+              gap: 2,
+              "&:hover": {
+                borderColor: "neutral.outlinedHoverBorder",
+              },
+            }}
+          >
+            <div>
+              <Typography
+                level="h2"
+                fontSize="lg"
+                id="card-description"
+                mb={0.5}
+              >
+                Duolingo lesson
+              </Typography>
+              <Typography
+                fontSize="sm"
+                aria-describedby="card-description"
+                mb={1}
+              >
+                <Link
+                  overlay
+                  underline="none"
+                  href="#interactive-card"
+                  sx={{ color: "text.tertiary" }}
+                >
+                  Loresm Ipsum sit dolor amet
+                </Link>
+              </Typography>
+              <div>
+                <Chip variant="soft" color="danger" size="sm">
+                  30 minutes late !
+                </Chip>
+              </div>
+            </div>
+          </Card>
+          <Card
+            variant="soft"
+            color="warning"
+            sx={{
+              //width: 320,
+              gap: 2,
+              "&:hover": {
+                borderColor: "neutral.outlinedHoverBorder",
+              },
+            }}
+          >
+            <div>
+              <Typography
+                level="h2"
+                fontSize="lg"
+                id="card-description"
+                mb={0.5}
+              >
+                Collect Petitions
+              </Typography>
+              <Typography
+                fontSize="sm"
+                aria-describedby="card-description"
+                mb={1}
+              >
+                <Link
+                  overlay
+                  underline="none"
+                  href="#interactive-card"
+                  sx={{ color: "text.tertiary" }}
+                >
+                  Loresm Ipsum sit dolor amet
+                </Link>
+              </Typography>
+              <div>
+                <LinearProgress determinate value={94} />
+                <Chip variant="soft" color="success" size="sm">
+                  Only 6 left!
+                </Chip>
+                <Chip variant="soft" color="warning" size="sm">
+                  Due tomorrow
+                </Chip>
+              </div>
+            </div>
+          </Card>
         </Sheet>
       </main>
     </CssVarsProvider>
