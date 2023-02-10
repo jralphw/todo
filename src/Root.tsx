@@ -1,19 +1,26 @@
 import "@fontsource/public-sans";
 import * as React from "react";
-import { CssVarsProvider } from "@mui/joy/styles";
 import "./Root.css";
-import { Tabs, Tab, TabList, ListItemDecorator, tabClasses } from "@mui/joy";
+import { Tabs, Tab, TabList, ListItemDecorator, tabClasses, Box} from "@mui/joy";
 import { HomeRounded, MenuBookRounded, SettingsRounded } from "@mui/icons-material";
 import { Outlet, useNavigate } from "react-router-dom";
 
+const useEnhancedEffect =
+  typeof window !== 'undefined' ? React.useLayoutEffect : React.useEffect;
 
 function Root() {
-  
+  const [node, setNode] = React.useState<HTMLElement | null>(null);
+  useEnhancedEffect(() => {
+    setNode(document.getElementById('mode-toggle'));
+  }, []);
   return (
-    <CssVarsProvider>
+    <Box
+      id="mode-toggle"
+      sx={{ bgcolor: 'background.body', }}
+    >
       <Outlet />
       <NavBar />
-    </CssVarsProvider>
+    </Box>
   );
 }
 

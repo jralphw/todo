@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainPage from './pages/home';
 import HistoryPage from './pages/history';
 import SettingsPage from './pages/settings';
+import { CssVarsProvider, extendTheme } from '@mui/joy/styles';
 
 const router = createBrowserRouter([
   {
@@ -28,12 +29,17 @@ const router = createBrowserRouter([
   }
 ]);
 
+const theme = extendTheme({ cssVarPrefix: 'demo' });
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CssVarsProvider
+      theme={theme}
+    >
+    <RouterProvider router={router} /></CssVarsProvider>
   </React.StrictMode>
 );
 

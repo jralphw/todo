@@ -8,6 +8,8 @@ You can find a Firebase-hosted preview [here](https://jrw-todo.web.app).
 #### Note; 
 1. This is intended to be a mobile app and will not do well on large screens.
 2. The firebase-hosted version will not necessarily be up-to-date on current progress.
+
+## I am currently in need of some assistance with this project. If willing, kindly contact using [jralphw@outlook.com](mailto:jralphw@outlook.com)
 ## Resources
 
 ### react framework
