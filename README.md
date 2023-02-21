@@ -7,7 +7,7 @@ The progress of this project is expected to be very irregular. This is due to th
 You can find a Firebase-hosted preview [here](https://jrw-todo.web.app). 
 
 ## Update
-As of 21st February 2023, the project has been completel torn-down adn development has restarted. The firebase version of the site is currently the old ver. and will be updated soon. Thanks
+As of 21st February 2023, the project has been completely torn-down adn development has restarted. The firebase version of the site is currently the old ver. and will be updated soon. Thanks
 #### Note; 
 1. This is intended to be a mobile app and may not do well on large screens. A fix for this is planned among the things being reviewed.
 2. The firebase-hosted version will not necessarily be up-to-date on current progress.
