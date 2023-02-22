@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { CssVarsProvider, extendTheme } from '@mui/joy';
-import "@fontsource/poppins"
+import "@fontsource/manrope"
 
 const theme = extendTheme({
   fontFamily: {
-    display: 'Poppins',
-    body: 'Poppins',
+    display: 'Manrope',
+    body: 'Manrope',
   },
 })
 

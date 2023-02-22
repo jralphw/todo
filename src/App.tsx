@@ -1,5 +1,5 @@
 import './App.css';
-import { Typography, Box, IconButton, Button } from '@mui/joy';
+import { Typography, Box, Button } from '@mui/joy';
 import "@fontsource/material-icons-rounded";
 
 function App() {
