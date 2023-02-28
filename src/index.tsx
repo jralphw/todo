@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { CssVarsProvider, extendTheme } from '@mui/joy';
-import "@fontsource/manrope"
+import '@fontsource/manrope';
 
 const theme = extendTheme({
   fontFamily: {
@@ -19,6 +19,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <CssVarsProvider theme={theme}>
+    {/* <CssVarsProvider> */}
       <App />
     </CssVarsProvider>
   </React.StrictMode>
